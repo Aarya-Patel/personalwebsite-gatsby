@@ -1,0 +1,60 @@
+.contact {
+  background-color: var(--grey);
+}
+
+.linkFlexbox {
+  display: flex;
+  padding: 0 0 3em 0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link {
+  opacity: 1;
+  text-decoration: none;
+  list-style-type: none;
+  flex-basis: 10%;
+  box-sizing: border-box;
+  margin: 1em;
+  transition: ease-in-out 0.25s;
+}
+
+.link:hover {
+  transform: scale(1.15);
+}
+
+.linkImg {
+  width: 6em;
+  height: 6em;
+}
+
+.contactGreet {
+  color: rgb(35, 35, 35);
+  line-height: 2em;
+  margin: 0em 4em 2em 4em;
+  text-align: center;
+  font-weight: 200;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(35, 35, 35);
+  width: 3em;
+  height: 2px;
+  bottom: -0.25em;
+  right: calc(50% - 1.5em);
+}
+
+.accent {
+  color: #2f81e0;
+}

@@ -1,0 +1,35 @@
+.svgWrapper {
+  position: relative;
+  width: 100vw;
+  height: 170px;
+}
+
+.topPolygon,
+.bottomPolygon {
+  height: 170px;
+  position: absolute;
+  display: inline-block;
+}
+
+.center {
+  width: 100vw;
+}
+
+.left {
+  width: 20vw;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.right {
+  width: 80vw;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.poly {
+  fill: var(--grey);
+  stroke: var(--grey);
+}

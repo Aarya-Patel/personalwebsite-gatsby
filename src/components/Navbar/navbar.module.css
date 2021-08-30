@@ -1,0 +1,31 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+}
+
+.navlink {
+  padding: 0 1em;
+  margin: 0.635em 1em;
+}
+
+.navlinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  margin: auto 2rem;
+}
+
+.logoName {
+  flex-basis: 100%;
+  font-weight: bold;
+  margin: auto 2rem;
+  padding: 0.625rem 0em;
+}
+
+.menuIcon {
+}

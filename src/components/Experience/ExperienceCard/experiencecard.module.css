@@ -1,0 +1,41 @@
+.experiencePic {
+  max-width: 18em;
+  min-width: 18em;
+  max-height: 18em;
+  min-height: 18em;
+  margin: 0 auto;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.experienceText {
+  margin-top: 2em;
+  font-weight: 200;
+}
+
+.experienceWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.experienceWrapper:last-child {
+  margin-bottom: 0;
+}
+
+.experienceTitle {
+  margin: 0px 0px 3px 0px;
+  color: #32b30e;
+}
+
+.experiencePosition {
+  margin: 0px 0px 3px 0px;
+  color: #2f81e0;
+}
+
+.experienceLocation {
+  margin: 0px 0px 3px 0px;
+  font-weight: 400;
+}

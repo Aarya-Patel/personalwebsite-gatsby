@@ -1,0 +1,4 @@
+.contentContainer {
+  /* padding: 2em; */
+  clip-path: rect(10px, 20px, 30px, 40px);
+}

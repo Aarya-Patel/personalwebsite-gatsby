@@ -1,0 +1,22 @@
+.experiences {
+  padding: 2em;
+  background-color: rgb(245, 245, 245);
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(35, 35, 35);
+  width: 3em;
+  height: 2px;
+  bottom: -0.25em;
+  right: calc(50% - 1.5em);
+}

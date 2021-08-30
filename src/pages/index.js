@@ -1,9 +1,16 @@
 import * as React from "react"
 import Layout from "../components/Layout"
+import Hero from "../components/Hero"
+import Experience from "../components/Experience"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello World!</h1>
+    <Hero />
+    <Experience />
+    <Contact />
+    <Footer />
   </Layout>
 )
 

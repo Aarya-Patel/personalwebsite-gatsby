@@ -1,13 +1,14 @@
 import React from "react"
 import Navbar from "../Navbar"
-import SEO from "../SEO"
+import Seo from "../SEO"
+import * as styles from "./layout.module.css"
 
 export default function Layout({ children }) {
   return (
     <div>
-      <SEO />
+      <Seo />
       <Navbar />
-      <main className="content-container">{children}</main>
+      <main className={styles.contentContainer}>{children}</main>
     </div>
   )
 }
