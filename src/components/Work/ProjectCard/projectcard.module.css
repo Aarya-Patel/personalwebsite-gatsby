@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.projectTitleWrapper {
+  height: 7em;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.35s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+
+.projectTitleWrapper:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.link {
+  text-decoration: none;
+}

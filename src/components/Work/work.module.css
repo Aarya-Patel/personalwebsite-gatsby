@@ -1,0 +1,35 @@
+.title {
+  position: relative;
+  text-align: center;
+  margin-top: 0px;
+  padding: 2em 2em 0em;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(35, 35, 35);
+  width: 3em;
+  height: 2px;
+  bottom: -0.25em;
+  right: calc(50% - 1.5em);
+}
+
+.work {
+  padding: 2em;
+}
+
+.gridContainer {
+  display: grid;
+  width: 100%;
+  margin: 4em 0em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  grid-column: 1 / 13;
+}
