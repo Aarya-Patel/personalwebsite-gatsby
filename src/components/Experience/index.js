@@ -1,5 +1,7 @@
 import React from "react"
 import ExperienceCard from "./ExperienceCard"
+import SeparatorTop from "../Separator/SeparatorTop"
+import SeparatorBottom from "../Separator/SeparatorBottom"
 import * as styles from "./experience.module.css"
 
 const experienceData = [
@@ -54,12 +56,14 @@ const experienceData = [
 const Experience = () => {
   return (
     <>
+      <SeparatorTop />
       <section id="#experiences" className={styles.experiences}>
         <h1 className={styles.title}>Just some things I do</h1>
         {experienceData.map((data, index) => {
           return <ExperienceCard {...data} key={index} />
         })}
       </section>
+      <SeparatorBottom />
     </>
   )
 }

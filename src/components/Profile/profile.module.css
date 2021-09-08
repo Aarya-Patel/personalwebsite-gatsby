@@ -1,0 +1,51 @@
+.profile {
+  padding: 4em;
+}
+
+.profileFlexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture {
+  width: 20em;
+  height: 20em;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+
+.profilePictureWrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.profileText {
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(35, 35, 35);
+  width: 3em;
+  height: 2px;
+  bottom: -0.25em;
+  right: calc(50% - 1.5em);
+}
