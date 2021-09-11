@@ -26,11 +26,13 @@ class Circle {
     ctx.fill()
   }
 
-  update(ctx) {
-    this.draw(ctx)
+  update() {
+    // this.draw()
     this.collision()
     this.x += this.dx
     this.y += this.dy
+    // this.ctx.fillStyle = "#FFFFFF"
+    // this.ctx.fillRect(0, 0, window.innerWidth, window.innerHeight)
   }
 
   collision() {

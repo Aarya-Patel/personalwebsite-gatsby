@@ -1,7 +1,7 @@
 import React from "react"
 import * as styles from "./hero.module.css"
 import { KeyboardArrowDown } from "@material-ui/icons"
-import Canvas from "../Canvas"
+import CanvasAnimation from "../Canvas"
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
         </p>
       </div>
       <KeyboardArrowDown className={styles.downArrow} />
-      <Canvas className={styles.canvas} />
+      <CanvasAnimation className={styles.canvas} />
     </section>
   )
 }
