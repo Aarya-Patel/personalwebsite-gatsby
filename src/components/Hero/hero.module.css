@@ -1,51 +1,59 @@
-canvas {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  bottom: 15vh;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
-
 .heroBox {
   width: 100%;
   box-sizing: border-box;
+  flex-direction: column;
   position: relative;
   display: flex;
-  margin: 3em 0;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heroContent {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hero-wrapper {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.hero-text {
+.intro {
   margin: 0;
+  font-size: 1.25rem;
+  font-style: italic;
 }
 
-.hero-content {
-  margin: 0 2em;
+.name {
+  margin: 0 0 1em;
+  font-size: 2rem;
 }
 
-.hero-text-caption {
-  font-size: 0.6em;
+.caption {
+  text-align: center;
+  font-weight: 200;
 }
 
-.resume {
-  text-decoration: none;
-  font-size: 0.6em;
-  padding: 1em 2em;
-  background-color: var(--light-blue);
-  color: var(--dark-grey);
-  border-radius: 3em;
-  transition: ease-in-out 0.25s;
+@keyframes arrowAnimation {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
 }
 
-.resume:hover {
-  background-color: var(--blue);
-  color: var(--offwhite);
+.downArrow {
+  position: absolute;
+  bottom: 75px;
+  animation: arrowAnimation 2s infinite;
+}
+
+.canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
