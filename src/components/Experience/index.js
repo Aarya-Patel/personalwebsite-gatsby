@@ -57,7 +57,7 @@ const Experience = () => {
   return (
     <>
       <SeparatorTop />
-      <section id="#experiences" className={styles.experiences}>
+      <section id="experience" className={styles.experiences}>
         <h1 className={styles.title}>Just some things I do</h1>
         {experienceData.map((data, index) => {
           return <ExperienceCard {...data} key={index} />

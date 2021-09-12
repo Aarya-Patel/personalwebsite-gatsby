@@ -1,19 +1,8 @@
 import React, { useRef, useEffect } from "react"
-import * as styles from "./canvas.module.css"
 import { Circle } from "../../util/canvas"
 
 const Canvas = props => {
   const canvasRef = useRef(null)
-
-  // Scales the canvas accordingly
-  const resizeCanvas = (canvas, context, circleArray) => {
-    const scale = window.devicePixelRatio // <--- Change to 1 on retina screens to see blurry canvas.
-    canvas.width = canvas.clientWidth * scale
-    canvas.height = canvas.clientHeight * scale
-
-    context.scale(scale, scale)
-    draw(context, circleArray)
-  }
 
   const draw = (ctx, circleArray) => {
     for (const circle of circleArray) {
@@ -33,11 +22,13 @@ const Canvas = props => {
         )
       )
     }
-    // Add the event listener to automatically resize canvas
-    window.addEventListener("resize", () =>
-      resizeCanvas(canvas, ctx, circleArray)
-    )
-    resizeCanvas(canvas, ctx, circleArray)
+    // Scales the canvas appropriately
+    const scale = window.devicePixelRatio // <--- Change to 1 on retina screens to see blurry canvas.
+    canvas.width = canvas.clientWidth * scale
+    canvas.height = canvas.clientHeight * scale
+
+    ctx.scale(scale, scale)
+    draw(ctx, circleArray)
   }, [])
 
   return <canvas ref={canvasRef} {...props} />

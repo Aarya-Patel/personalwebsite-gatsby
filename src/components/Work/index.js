@@ -28,7 +28,7 @@ const projectInfo = {
 
 function Project(props) {
   return (
-    <section id="#work" className={styles.work}>
+    <section id="work" className={styles.work}>
       <h1 className={styles.title}>This is my work</h1>
       <div className={styles.gridContainer}>
         <div className={styles.item}>

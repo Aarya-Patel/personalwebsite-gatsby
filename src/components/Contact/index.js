@@ -8,7 +8,7 @@ const ContactComponent = ({ data }) => {
   const githubImg = getImage(data.github.childImageSharp)
 
   return (
-    <section id="#contact" className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <h1 className={styles.title}>Contact</h1>
       <p className={styles.contactGreet}>
         Let's connect. If you wish to grab a hold of me, I prefer messaging me

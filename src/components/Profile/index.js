@@ -7,7 +7,7 @@ const ProfileComponent = ({ data }) => {
   const profilePic = getImage(data.profilepic.childImageSharp)
 
   return (
-    <section id="#profile" className={styles.profile}>
+    <section id="profile" className={styles.profile}>
       <h1 className={styles.title}>Hey, I'm Aarya Patel!</h1>
       <div className={styles.profileFlexbox}>
         <div className={styles.profilePictureWrapper}>

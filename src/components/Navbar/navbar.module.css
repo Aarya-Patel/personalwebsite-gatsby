@@ -27,3 +27,12 @@
   margin: auto 2rem;
   padding: 0.625rem 0em;
 }
+
+.navlink {
+  color: black;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+}

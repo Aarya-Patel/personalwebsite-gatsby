@@ -1,29 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import * as styles from "./navbar.module.css"
 import MenuIcon from "@material-ui/icons/Menu"
+import Sidebar from "../Sidebar"
 import { useMediaQueries } from "../../hooks/useMediaQueries"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Navbar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const smBreakpoint = useMediaQueries("sm")
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
 
   const renderNavlinks = matches => {
     return matches ? (
-      <MenuIcon className={styles.menuIcon} />
+      <>
+        <MenuIcon className={styles.menuIcon} onClick={toggleSidebar} />
+        <Sidebar open={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      </>
     ) : (
       <>
-        <Link to="#profile" className={styles.navlink}>
+        <AnchorLink to="/#profile" className={styles.navlink}>
           Profile
-        </Link>
-        <Link to="#experiences" className={styles.navlink}>
+        </AnchorLink>
+        <AnchorLink to="/#experience" className={styles.navlink}>
           Experience
-        </Link>
-        <Link to="#work" className={styles.navlink}>
+        </AnchorLink>
+        <AnchorLink to="/#work" className={styles.navlink}>
           Work
-        </Link>
-        <Link to="#contact" className={styles.navlink}>
+        </AnchorLink>
+        <AnchorLink to="/#contact" className={styles.navlink}>
           Contact
-        </Link>
+        </AnchorLink>
       </>
     )
   }
