@@ -8,6 +8,7 @@
   text-align: center;
   margin-top: 0px;
   padding-top: 2em;
+  margin-bottom: 2em;
 }
 
 .title::after {
@@ -19,4 +20,10 @@
   height: 2px;
   bottom: -0.25em;
   right: calc(50% - 1.5em);
+}
+
+@media (min-width: 992px) {
+  .experiences {
+    padding: 1em 12em;
+  }
 }

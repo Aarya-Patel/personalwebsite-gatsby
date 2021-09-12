@@ -36,6 +36,9 @@ module.exports = {
     // `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -64,
+      },
     },
   ],
 }

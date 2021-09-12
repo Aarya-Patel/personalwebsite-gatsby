@@ -1,15 +1,6 @@
-.contentContainer {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.wrapper {
-  position: relative;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+/* iPad */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px !important;
+  }
 }

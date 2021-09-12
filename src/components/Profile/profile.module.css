@@ -37,6 +37,7 @@
   text-align: center;
   margin-top: 0px;
   padding-top: 2em;
+  margin-bottom: 2em;
 }
 
 .title::after {
@@ -48,4 +49,21 @@
   height: 2px;
   bottom: -0.25em;
   right: calc(50% - 1.5em);
+}
+
+/* iPad */
+@media (min-width: 768px) {
+  .profileFlexbox {
+    flex-direction: row;
+  }
+
+  .profileText {
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile {
+    padding: 0 12em;
+  }
 }

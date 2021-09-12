@@ -17,7 +17,7 @@
 }
 
 .work {
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 .gridContainer {
@@ -32,4 +32,10 @@
 
 .item {
   grid-column: 1 / 13;
+}
+
+@media (min-width: 992px) {
+  .work {
+    padding: 1em 12em;
+  }
 }

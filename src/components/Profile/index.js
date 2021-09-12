@@ -8,7 +8,7 @@ const ProfileComponent = ({ data }) => {
 
   return (
     <section id="profile" className={styles.profile}>
-      <h1 className={styles.title}>Hey, I'm Aarya Patel!</h1>
+      <h1 className={styles.title}>Hello there!</h1>
       <div className={styles.profileFlexbox}>
         <div className={styles.profilePictureWrapper}>
           <GatsbyImage

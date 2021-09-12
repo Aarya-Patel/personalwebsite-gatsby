@@ -25,7 +25,7 @@ const ExperienceCardComponent = ({
         <h3 className={styles.experienceTitle}>{title}</h3>
         <h4 className={styles.experiencePosition}>{positionDate}</h4>
         <p className={styles.experienceLocation}>{location}</p>
-        <p className={styles.experienceText}>{text}</p>
+        <p>{text}</p>
       </div>
     </div>
   )

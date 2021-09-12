@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import * as styles from "./navbar.module.css"
 import MenuIcon from "@material-ui/icons/Menu"
 import Sidebar from "../Sidebar"
@@ -8,7 +7,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const smBreakpoint = useMediaQueries("sm")
+  const smBreakpoint = useMediaQueries("md")
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen)
