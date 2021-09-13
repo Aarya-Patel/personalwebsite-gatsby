@@ -16,7 +16,7 @@ export default function Navbar() {
   const renderNavlinks = matches => {
     return matches ? (
       <>
-        <MenuIcon className={styles.menuIcon} onClick={toggleSidebar} />
+        <MenuIcon onClick={toggleSidebar} />
         <Sidebar open={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </>
     ) : (
