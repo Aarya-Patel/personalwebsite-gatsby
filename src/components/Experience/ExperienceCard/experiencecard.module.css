@@ -11,6 +11,7 @@
 .experienceText {
   margin-top: 2em;
   font-weight: 200;
+  max-width: 500px;
 }
 
 .experienceWrapper {

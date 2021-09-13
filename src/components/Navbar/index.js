@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <span className={styles.logoName}>AP</span>
+      <span className={styles.logoName}>aarya patel</span>
       <div className={styles.navlinksContainer}>
         {renderNavlinks(smBreakpoint)}
       </div>

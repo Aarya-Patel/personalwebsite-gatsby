@@ -8,7 +8,7 @@
   align-items: center;
   height: 4rem;
   background-color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .navlinksContainer {
@@ -46,5 +46,15 @@
 
   .navlinksContainer {
     margin: auto 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .logoName {
+    margin: auto 6em;
+  }
+
+  .navlinksContainer {
+    margin: auto 6em;
   }
 }
