@@ -54,7 +54,7 @@ function ExperienceCard(props) {
               gatsbyImageData(quality: 90, placeholder: BLURRED)
             }
           }
-          toronto: file(base: { eq: "toronto.jpg" }) {
+          signiant: file(base: { eq: "signiant.jpg" }) {
             base
             childImageSharp {
               gatsbyImageData(quality: 90, placeholder: BLURRED)

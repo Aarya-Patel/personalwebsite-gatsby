@@ -6,6 +6,13 @@ import * as styles from "./experience.module.css"
 
 const experienceData = [
   {
+    image: "signiant",
+    title: "Signiant",
+    positionDate: "Full Stack Developer, May 2021 - Aug 2021",
+    location: "Ottawa, ON",
+    text: "Worked on the documentation team to improve the documentation experience for clients. I managed multiple web applications using Gatsby.js, React, Node.js and Material UI. Over the course of my term, I updated major dependencies, implemented severeal features and migrated legacy projects onto a modern tech stack.",
+  },
+  {
     image: "icube",
     title: "ICUBE UTM",
     positionDate: "Web Developer, Sept 2020 - Present",
@@ -32,24 +39,14 @@ const experienceData = [
       "I learned how to work in a team environment and how to respond quickly to any given scenario through following protocols.",
   },
   {
-    image: "toronto",
-    title: "City of Toronto",
-    positionDate: "Youth Summer Camp Volunteer, July 2017 - Aug 2017",
-    location: "Toronto, ON",
-    text:
-      "Worked alongside camp counsellors to help organize and maintain daily camp activities. " +
-      "Responsible for leading activities in an engaging manner that captivated the children’s attention. " +
-      "Promoted a safe environment optimal for entertainment through supervision.",
-  },
-  {
     image: "uoft",
     title: "University of Toronto",
     positionDate: "B.S. in Computer Science, Sept 2019 - May 2023",
     location: "Toronto, ON",
     text:
       "University of Toronto presents an atmosphere of innovation and diversity of opportunity. " +
-      "The culture at UofT has and continues to push me to expand and challenge me to become a better individual. " +
-      "Relevant Coursework include: Software Design (Java), Intro to Computer Science (Python), Reasoning for Computer Science.",
+      "The culture at UofT has and continues to push me to expand and challenge myself to become a better individual. " +
+      "Relevant Coursework include: Intro to Machine Learning, Intro to Databases, Web Development and Data Structure & Analysis.",
   },
 ]
 
