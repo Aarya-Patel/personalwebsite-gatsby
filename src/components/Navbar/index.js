@@ -27,8 +27,8 @@ export default function Navbar() {
         <AnchorLink to="/#experience" className={styles.navlink}>
           Experience
         </AnchorLink>
-        <AnchorLink to="/#work" className={styles.navlink}>
-          Work
+        <AnchorLink to="/#projects" className={styles.navlink}>
+          Projects
         </AnchorLink>
         <AnchorLink to="/#contact" className={styles.navlink}>
           Contact

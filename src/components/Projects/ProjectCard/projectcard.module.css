@@ -40,3 +40,17 @@
   border-radius: 1em;
   font-weight: 300;
 }
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .projectContent {
+    margin-left: 1.5em;
+    flex-basis: 60%;
+  }
+  .image {
+    flex-basis: 40%;
+  }
+}

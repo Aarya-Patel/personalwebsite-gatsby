@@ -3,6 +3,7 @@
   text-align: center;
   margin-top: 0px;
   padding: 2em 2em 0em;
+  margin-bottom: 3em;
 }
 
 .title::after {
@@ -16,26 +17,23 @@
   right: calc(50% - 1.5em);
 }
 
-.work {
+.projects {
   padding: 1em 2em;
 }
 
-.gridContainer {
-  display: grid;
+.container {
   width: 100%;
   margin: 4em 0em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
 }
 
 .item {
-  grid-column: 1 / 13;
+  margin: 1.25em 0em;
 }
 
 @media (min-width: 992px) {
-  .work {
+  .projects {
     padding: 1em 12em;
   }
 }

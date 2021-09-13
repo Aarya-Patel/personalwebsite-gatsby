@@ -16,36 +16,34 @@ const ProjectCardComponent = ({
   return (
     <div className={styles.card}>
       <GatsbyImage image={image} className={styles.image} />
-      <div>
-        <div className={styles.projectTitleWrapper}>
-          <h3>{projectName}</h3>
-          <p className={styles.projectInfoText}>{projectInfo}</p>
-          <div>
-            {ghLink ? (
-              <a
-                className={styles.workButton}
-                href={ghLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Source
-              </a>
-            ) : (
-              ""
-            )}
-            {siteLink ? (
-              <a
-                className={styles.workButton}
-                href={siteLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Site
-              </a>
-            ) : (
-              ""
-            )}
-          </div>
+      <div className={styles.projectContent}>
+        <h3>{projectName}</h3>
+        <p className={styles.projectInfoText}>{projectInfo}</p>
+        <div>
+          {ghLink ? (
+            <a
+              className={styles.workButton}
+              href={ghLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Source
+            </a>
+          ) : (
+            ""
+          )}
+          {siteLink ? (
+            <a
+              className={styles.workButton}
+              href={siteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Site
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

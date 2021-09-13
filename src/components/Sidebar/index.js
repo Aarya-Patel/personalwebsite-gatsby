@@ -41,8 +41,8 @@ const Sidebar = ({ open, toggleSidebar }) => {
         </ListItem>
         <Divider />
         <ListItem className={classes.listItem} onClick={toggleSidebar}>
-          <AnchorLink to="/#work" className={classes.navlink}>
-            Work
+          <AnchorLink to="/#projects" className={classes.navlink}>
+            Projects
           </AnchorLink>
         </ListItem>
         <Divider />
