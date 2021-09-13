@@ -10,7 +10,7 @@ export default function Hero() {
         <p className={styles.intro}>👋 Hey, I'm</p>
         <h1 className={styles.name}>Aarya Patel</h1>
         <p className={styles.caption}>
-          Software engineer experienced
+          Software engineer experienced in
           <br />
           full stack web applications and curious about cloud computing.
         </p>
