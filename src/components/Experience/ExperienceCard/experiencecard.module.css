@@ -1,8 +1,8 @@
 .experiencePic {
   max-width: 18em;
-  min-width: 18em;
   max-height: 18em;
-  min-height: 18em;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 10%;
   text-align: center;
@@ -49,5 +49,10 @@
 
   .experienceText {
     margin-left: 2em;
+  }
+
+  .experiencePic {
+    min-width: 18em;
+    min-height: 18em;
   }
 }
