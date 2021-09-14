@@ -5,7 +5,7 @@ import logo from "../../images/gatsbyLogo.svg"
 export default function Footer() {
   return (
     <section className={styles.footer}>
-      <p>designed & developed by Aarya Patel with </p>
+      <p>designed & developed with </p>
       <img src={logo} alt="" href="Gatsby Logo" />
     </section>
   )
