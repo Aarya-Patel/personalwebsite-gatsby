@@ -15,7 +15,11 @@ const ProjectCardComponent = ({
 
   return (
     <div className={styles.card}>
-      <GatsbyImage image={image} className={styles.image} alt={projectName} />
+      <GatsbyImage
+        image={image}
+        className={styles.image}
+        alt={data[imageBase].base}
+      />
       <div className={styles.projectContent}>
         <h3>{projectName}</h3>
         <p className={styles.projectInfoText}>{projectInfo}</p>
@@ -89,6 +93,30 @@ export default function ProjectCard(props) {
             }
           }
           reminder: file(base: { eq: "reminder.png" }) {
+            base
+            childImageSharp {
+              gatsbyImageData(quality: 90, placeholder: BLURRED)
+            }
+          }
+          synduce: file(base: { eq: "synduce.png" }) {
+            base
+            childImageSharp {
+              gatsbyImageData(quality: 90, placeholder: BLURRED)
+            }
+          }
+          store: file(base: { eq: "store.png" }) {
+            base
+            childImageSharp {
+              gatsbyImageData(quality: 90, placeholder: BLURRED)
+            }
+          }
+          covidapi: file(base: { eq: "covidapi.png" }) {
+            base
+            childImageSharp {
+              gatsbyImageData(quality: 90, placeholder: BLURRED)
+            }
+          }
+          brackets: file(base: { eq: "brackets.png" }) {
             base
             childImageSharp {
               gatsbyImageData(quality: 90, placeholder: BLURRED)
