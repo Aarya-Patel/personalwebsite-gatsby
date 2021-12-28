@@ -2,9 +2,21 @@ module.exports = {
   siteMetadata: {
     title: `Aarya Patel`,
     titleTemplate: `%s | Aarya Patel`,
-    description: `Portfolio Website`,
+    description: `Hey, I'm Aarya Patel. Software engineer experienced in
+    full stack web applications and curious about cloud computing.`,
     author: `Aarya Patel`,
-    siteUrl: `https://aarya-patel.netlify.app/`,
+    siteUrl: `https://aarya-patel.netlify.app`,
+    keywords: [
+      "Software Devloper",
+      "University of Toronto",
+      "React",
+      "Node.js",
+      "AWS",
+      "Gatsby",
+      "MongoDB",
+      "PostgreSQL",
+      "Python",
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
