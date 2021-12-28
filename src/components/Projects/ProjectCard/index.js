@@ -15,7 +15,7 @@ const ProjectCardComponent = ({
 
   return (
     <div className={styles.card}>
-      <GatsbyImage image={image} className={styles.image} />
+      <GatsbyImage image={image} className={styles.image} alt={projectName} />
       <div className={styles.projectContent}>
         <h3>{projectName}</h3>
         <p className={styles.projectInfoText}>{projectInfo}</p>

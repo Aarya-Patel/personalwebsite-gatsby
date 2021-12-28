@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-export default function SEO() {
+export default function SEO({ data }) {
   return (
     <Helmet>
       <meta name="author" content="Aarya Patel" />
@@ -14,3 +15,17 @@ export default function SEO() {
     </Helmet>
   )
 }
+
+export const query = graphql`
+  query MySiteMetadata {
+    site {
+      siteMetadata {
+        author
+        siteUrl
+        description
+        title
+        titleTemplate
+      }
+    }
+  }
+`
