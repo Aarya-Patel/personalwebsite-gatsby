@@ -17,8 +17,8 @@ const Canvas = props => {
     for (let i = 0; i < 10; i++) {
       circleArray.push(
         new Circle(
-          Math.random() * window.innerWidth,
-          Math.random() * window.innerHeight
+          Math.random() * canvas.clientWidth,
+          Math.random() * canvas.clientHeight
         )
       )
     }
