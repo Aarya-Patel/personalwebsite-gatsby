@@ -1,6 +1,5 @@
 .svgWrapper {
   position: relative;
-  width: 100vw;
 }
 
 .svgWrapper > svg {
