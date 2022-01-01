@@ -50,12 +50,12 @@
   position: absolute;
   bottom: 75px;
   animation: arrowAnimation 2s infinite;
+  -webkit-animation: arrowAnimation 2s infinite;
 }
 
 .canvas {
   position: absolute;
   z-index: -1;
   top: 0;
-  /* max-width: 100vw; */
   height: 100vh;
 }
