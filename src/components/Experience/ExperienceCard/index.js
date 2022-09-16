@@ -60,6 +60,12 @@ function ExperienceCard(props) {
               gatsbyImageData(quality: 90, placeholder: BLURRED)
             }
           }
+          wish: file(base: { eq: "wish.png" }) {
+            base
+            childImageSharp {
+              gatsbyImageData(quality: 90, placeholder: BLURRED)
+            }
+          }
           uoft: file(base: { eq: "uoft.jpg" }) {
             base
             childImageSharp {

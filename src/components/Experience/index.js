@@ -6,6 +6,16 @@ import * as styles from "./experience.module.css"
 
 const experienceData = [
   {
+    image: "wish",
+    title: "Wish",
+    positionDate: "Software Engineer, May 2022 - Present",
+    location: "Toronto, ON",
+    text:
+      "Working alongside the Listing Moderation Team to improve platform integrity! Our team makes sure that products violating our policies are appropriately actioned upon. " +
+      "Currently working on an integration with an external ML service in an effort to automate product review that may violate intellectual property. Other than the work itself, " +
+      "I really enjoy the view from anywhere in the office and the plethora of snacks!",
+  },
+  {
     image: "signiant",
     title: "Signiant",
     positionDate: "Full Stack Developer, May 2021 - Aug 2021",
