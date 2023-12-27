@@ -8,7 +8,7 @@ const experienceData = [
   {
     image: "wish",
     title: "Wish",
-    positionDate: "Software Engineer, May 2022 - Present",
+    positionDate: "Software Engineer, May 2022 - Sept 2023",
     location: "Toronto, ON",
     text:
       "Working alongside the Listing Moderation Team to improve platform integrity! Our team makes sure that products violating our policies are appropriately actioned upon. " +

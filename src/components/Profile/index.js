@@ -37,7 +37,7 @@ export default function Profile(props) {
     <StaticQuery
       query={graphql`
         {
-          profilepic: file(base: { eq: "profilepic.png" }) {
+          profilepic: file(base: { eq: "profilepic.jpg" }) {
             base
             childImageSharp {
               gatsbyImageData(quality: 90, placeholder: BLURRED)
